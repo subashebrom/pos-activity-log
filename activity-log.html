@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- === css link === -->
+    <link rel="stylesheet" href="css/activity-log.css">
+    <title>Activity Log</title>
+</head>
+
+<body>
+    <!-- === PARENT CONTAINER === -->
+    <div class="sh-parent-container">
+        <!-- === CHILD CONTAINER === -->
+        <div class="sh-child-container">
+            <!-- === ACTIVITY TOP ITEMS === -->
+            <div class="sh-top-items-container">
+                <p>Activity Log</p>
+                <!-- === ACTIVITY TOP RIGHT ITEMS === -->
+                <div class="sh-top-right-items">
+                    <div class="sh-trash-icon">
+                        <a href="#"><i class="fa-solid fa-trash"></i>Delete Selected Items</a>
+                    </div>
+                    <div class="sh-filter-icon">
+                        <a href="#"><i class="fa-solid fa-filter"></i>Filter</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!-- === FILTER SECTION === -->
+            <div class="sh-filter-section">
+                <select name="" id="">
+                    <option value="User Name" name="username">User Name</option>
+                    <option value="all" name="all">All</option>
+                </select>
+                <input type="text" placeholder="19/02/2025-19/02/2025" name="" id="">
+                <div class="sh-find-button">
+                    <a href="#">Find</a>
+                </div>
+                <div class="sh-reset-button">
+                    <a href="#">Reset</a>
+                </div>
+            </div>
+            <div class="sh-line">
+                <hr>
+            </div>
+            <!-- === SHOW AND SEARCH BOX CONTAINER === -->
+            <div class="sh-show-search-container">
+                <div class="sh-show">
+                    <p>Show</p>
+                    <select name="" id="">
+                        <option value="10" name="show">10</option>
+                        <option value="20" name="show">20</option>
+                        <option value="30" name="show">30</option>
+                        <option value="40" name="show">40</option>
+                        <option value="50" name="show">50</option>
+                    </select>
+                    <p>Entries</p>
+                </div>
+                <!-- === SEARCH BOX === -->
+                <div class="sh-search-container">
+                    <label for="text">Search:</label>
+                    <input type="search" placeholder="">
+                </div>
+            </div>
+            <!-- === TABLE DETAILS === -->
+            <div class="sh-table-details">
+                <!-- === TABLE === -->
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="sl">SL</th>
+                            <th class="all-check-box"> <input type="checkbox" name="" id=""> All</th>
+                            <th class="text-left">Date</th>
+                            <th class="text-left">Long Name</th>
+                            <th class="text-left">Discription</th>
+                            <th class="text-left">Done By</th>
+                            <th class="sh-action">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="number">1</td>
+                            <td>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="" />
+                                </div>
+                            </td>
+                            <td>
+                                <p>19/02/2025</p>
+                                <p>02:10:30</p>
+                            </td>
+                            <td>
+                                <p>Setting</p>
+                                <p>(Application)</p>
+                            </td>
+                            <td>
+                                <p>Application Update</p>
+                            </td>
+                            <td class="done-name">John Doe</td>
+                            <td class="sh-delete-button"><i class="fa-solid fa-trash"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- === SLIDE PAGES === -->
+            <div class="sh-slider-pages">
+                <p>Showing 1 to 1 of 1 entries</p>
+                <div class="sh-slide-right-item">
+                    <a href="#">Previous</a>
+                    <p>1</p>
+                    <a href="#">Next</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- === FONT AWSOME LINK === -->
+    <script src="https://kit.fontawesome.com/aab4d24b6f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

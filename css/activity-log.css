@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: var(--gray-white);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--gray-white);
+}
+
+:root {
+    --gray-white: #F0F1F2;
+    --white: #FFFFFF;
+    --black: #000000;
+    --gray-black: #DDDDDD;
+    --light-black: #212523;
+    --light-black-op: #21252350;
+    --main-green: #157343;
+    --main-light: #37A000;
+    --light-orange: #FD7E14;
+    --green: #008000;
+    --light-green: #e9f6ec;
+    --red: #FF0000;
+    --light-red: #fbeaec;
+    /* === FONTS SIZE FOR HEADING === */
+    --primary-head: 22px;
+    --secondary-head: 1.125rem;
+    --secondary: 1rem;
+    --primary-para: 0.825rem;
+}
+
+/* === PARENT CONTAINER === */
+.sh-parent-container {
+    width: 100%;
+}
+
+/* === CHILD CONTAINER === */
+.sh-child-container {
+    margin: 20px;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2);
+}
+
+/* === ACTIVITY TOP ITEMS === */
+.sh-top-items-container {
+    padding: 20px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sh-top-items-container p {
+    font-size: var(--secondary-head);
+}
+
+/* === ACTIVITY TOP RIGHT ITEMS === */
+.sh-top-right-items {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sh-trash-icon a {
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.sh-trash-icon i {
+    margin-right: 5px;
+}
+
+.sh-filter-icon a {
+    padding: 10px 10px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
+
+.sh-filter-icon i {
+    margin-right: 5px;
+}
+
+/* === FILTER SECTION === */
+.sh-filter-section {
+    width: 100%;
+    gap: 25px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sh-filter-section select {
+    width: 20%;
+    padding: 6px 8px;
+    border: 1px solid var(--light-black-op);
+    border-radius: 4px;
+    font-size: var(--secondary);
+}
+
+.sh-filter-section select:focus {
+    outline: none;
+}
+
+.sh-filter-section input {
+    width: 20%;
+    padding: 6px 8px;
+    border: 1px solid var(--light-black-op);
+    border-radius: 4px;
+    font-size: var(--secondary);
+}
+
+.sh-filter-section input:focus {
+    outline: none;
+}
+
+/* === FIND BUTTON === */
+.sh-find-button a {
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    color: var(--white);
+    background-color: var(--main-green);
+}
+
+/* === RESET BUTTON === */
+.sh-reset-button a {
+    padding: 6px 15px;
+    border-radius: 5px;
+    font-size: var(--secondary);
+    color: var(--white);
+    background-color: var(--red);
+}
+
+.sh-line {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+/* === SHOW AND SEARCH BOX CONTAINER === */
+.sh-show-search-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sh-show {
+    gap: 5px;
+    font-size: var(--secondary);
+    display: flex;
+    align-items: center;
+}
+
+.sh-show select {
+    font-size: var(--secondary);
+    padding: 1px 8px;
+    border: 1px solid var(--light-black-op);
+    border-radius: 5px;
+}
+
+.sh-show select:focus {
+    outline: none;
+}
+
+/* === SEARCH BOX === */
+.sh-search-container {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.sh-search-container input {
+    padding: 3px 4px;
+    font-size: var(--secondary);
+    border-radius: 5px;
+    border: 1px solid var(--light-black-op);
+}
+
+.sh-search-container input:focus {
+    outline: none;
+}
+
+/* === TABLE DETAILS === */
+.sh-table-details {
+    padding: 20px;
+}
+
+/* === TABLE === */
+table {
+    width: 100%;
+    padding: 0px 30px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    font-size: var(--secondary);
+    font-weight: 500;
+    padding: 10px;
+    border: 1px solid var(--light-black-op);
+}
+
+.sl {
+    width: 4%;
+}
+
+.all-check-box {
+    width: 5%;
+}
+.number{
+    text-align: center;
+}
+.form-check{
+    text-align: center;
+}
+.text-left {
+    text-align: left;
+}
+
+.sh-action {
+    width: 7%;
+}
+
+.sh-delete-button {
+    text-align: center;
+}
+
+.sh-delete-button i {
+    padding: 7px;
+    color: var(--red);
+    border-radius: 2px;
+    border: 1px solid var(--red);
+    background-color: var(--light-red);
+}
+
+.sh-delete-button i:hover {
+    color: var(--white);
+    background-color: var(--red);
+}
+
+/* === SLIDE PAGES === */
+.sh-slider-pages {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sh-slide-right-item {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.sh-slide-right-item a {
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: var(--black);
+    background-color: var(--light-black-op);
+}
+.sh-slide-right-item p{
+    padding: 6px 15px;
+    border-radius: 5px;
+    color: var(--white);
+    background-color: var(--main-green);
+}
